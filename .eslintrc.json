@@ -1,0 +1,59 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": [
+    "next",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "airbnb",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:tailwindcss/recommended",
+    "prettier",
+    "plugin:prettier/recommended"
+  ],
+  "ignorePatterns": [
+    "node_modules",
+    "dist",
+    "built"
+  ],
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly",
+    "JSX": "readonly"
+  },
+  "plugins": ["@typescript-eslint", "react", "prettier"],
+  "rules": {
+    "prettier/prettier": ["error"],
+    "react/prop-types": 0,
+    "spaced-comment": "warn",
+    "react/sort-comp": [
+      1,
+      {
+        "order": ["type-annotations", "static-methods", "lifecycle", "everything-else", "render"]
+      }
+    ],
+    "import/prefer-default-export": 0,
+    "import/extensions": 0,
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".tsx"] }],
+    "import/no-extraneous-dependencies": 0,
+    "object-curly-newline": 0,
+    "react/no-unescaped-entities": 0,
+    "comma-dangle": ["error", "never"],
+    "max-len": ["error", {
+      "code": 120
+    }],
+    "react/require-default-props": 0,
+    "@typescript-eslint/no-use-before-define": ["error"],
+    "@typescript-eslint/ban-ts-comment": 0,
+    "@typescript-eslint/ban-types": ["error", { "types": { "Function": false } }],
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off"
+  }
+}

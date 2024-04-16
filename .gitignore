@@ -1,0 +1,30 @@
+# Logs
+logs
+_logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# build output
+dist
+builds
+built
+.next
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+.eslintcache
+.stylelintcache
+public/sw.js
+public/workbox-*
+
+.env
+node_modules
+out/
+.idea/
+.DS_Store
+.vscode/
